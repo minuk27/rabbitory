@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rabbit's Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Smart Rabbit's Studio</header>
+    <nav>
+        <button onclick="showPage('about')">나의 소개</button>
+        <button onclick="showPage('projects')">내가 만든 게임</button>
+        <button onclick="showPage('skills')">나의 스킬</button>
+        <button onclick="showPage('team')">팀 소개</button>
+    </nav>
+    
+    <div id="about" class="content"> <h2>나의 소개</h2> <p>여기에 자기소개를 작성하세요.</p> </div>
+    <div id="projects" class="content hidden"> <h2>내가 만든 게임</h2> <p>게임 프로젝트를 소개하는 공간입니다.</p> </div>
+    <div id="skills" class="content hidden"> <h2>나의 스킬</h2> <p>사용하는 기술을 정리하는 공간입니다.</p> </div>
+    <div id="team" class="content hidden"> <h2>팀 소개</h2> <p>팀원 소개를 작성하세요. (선택사항)</p> </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
