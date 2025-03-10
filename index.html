@@ -10,13 +10,16 @@
 <body class="text-center">
     <header class="bg-dark text-white py-3">Smart Rabbit's Studio</header>
     <nav class="my-3">
-        <button class="btn btn-secondary" onclick="showPage('about')">나의 소개</button>
-        <button class="btn btn-secondary" onclick="showPage('projects')">내가 만든 게임</button>
-        <button class="btn btn-secondary" onclick="showPage('skills')">나의 스킬</button>
-        <button class="btn btn-secondary" onclick="showPage('team')">팀 소개</button>
+        <button class="btn btn-secondary" onclick="startQuest()">퀘스트 시작</button>
     </nav>
     
-    <div id="about" class="content container border rounded p-4"> <h2>나의 소개</h2> <p>여기에 자기소개를 작성하세요.</p> </div>
+    <div id="quest-log" class="content container border rounded p-4"> 
+        <h2>퀘스트 로그</h2>
+        <p id="quest-text">퀘스트를 시작하려면 버튼을 누르세요.</p>
+        <button class="btn btn-primary mt-3" onclick="progressQuest()">다음 단계</button>
+    </div>
+
+    <div id="about" class="content container border rounded p-4 d-none"> <h2>나의 소개</h2> <p>여기에 자기소개를 작성하세요.</p> </div>
     <div id="projects" class="content container border rounded p-4 d-none"> <h2>내가 만든 게임</h2> <p>게임 프로젝트를 소개하는 공간입니다.</p> </div>
     <div id="skills" class="content container border rounded p-4 d-none"> <h2>나의 스킬</h2> <p>사용하는 기술을 정리하는 공간입니다.</p> </div>
     <div id="team" class="content container border rounded p-4 d-none"> <h2>팀 소개</h2> <p>팀원 소개를 작성하세요. (선택사항)</p> </div>
