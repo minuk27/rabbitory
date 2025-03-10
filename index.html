@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Rabbit's Studio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
-<body class="text-center">
-    <header class="bg-dark text-white py-3">Smart Rabbit's Studio</header>
-    <nav class="my-3">
-        <button class="btn btn-secondary" onclick="startQuest()">퀘스트 시작</button>
-    </nav>
-    
-    <div id="quest-log" class="content container border rounded p-4"> 
-        <h2>퀘스트 로그</h2>
-        <p id="quest-text">퀘스트를 시작하려면 버튼을 누르세요.</p>
-        <button class="btn btn-primary mt-3" onclick="progressQuest()">다음 단계</button>
+<body onload="onInitialLoad()">
+    <!-- 네비게이션 바 -->
+    <div id="nav-bar">
+        <div id="nav-top">
+            <h4>LOGO</h4>
+        </div>
+        <div id="nav-buttons">
+            <button class="btn btn-light" onclick="loadContent('pages/home.html')">HOME</button>
+            <button class="btn btn-light" onclick="loadContent('pages/game.html')">GAME</button>
+            <button class="btn btn-light" onclick="loadContent('pages/developer.html')">DEVELOPER</button>
+            <button class="btn btn-light" onclick="loadContent('pages/board.html')">BOARD</button>
+            <button class="btn btn-light" onclick="loadContent('pages/info.html')">INFO</button>
+        </div>
+        <div id="nav-bottom">
+            <p>© 2025 Smart Rabbit</p>
+        </div>
     </div>
-
-    <div id="about" class="content container border rounded p-4 d-none"> <h2>나의 소개</h2> <p>여기에 자기소개를 작성하세요.</p> </div>
-    <div id="projects" class="content container border rounded p-4 d-none"> <h2>내가 만든 게임</h2> <p>게임 프로젝트를 소개하는 공간입니다.</p> </div>
-    <div id="skills" class="content container border rounded p-4 d-none"> <h2>나의 스킬</h2> <p>사용하는 기술을 정리하는 공간입니다.</p> </div>
-    <div id="team" class="content container border rounded p-4 d-none"> <h2>팀 소개</h2> <p>팀원 소개를 작성하세요. (선택사항)</p> </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- 컨텐츠 영역 -->
+    <div id="content-wrapper">
+        <img src="testImage.jpg" alt="Background Image"><!-- 배경이미지 넣기 -->
+        <div id="content-container">
+            <!-- In HTML -->
+        </div>
+    </div>
 </body>
 </html>
