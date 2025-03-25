@@ -2,7 +2,8 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-}
+    overflow: hidden; /* 💡 전체 스크롤 방지 */
+  }
 
 /* 네비게이션 바를 3개의 섹션으로 나눔 */
 #nav-bar {
@@ -49,11 +50,13 @@ body {
 #content-wrapper {
     flex-grow: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* 💡 상단부터 표시되게 */
     justify-content: center;
     padding: 20px;
     position: relative;
+    overflow-y: auto;       /* 💡 내부 내용 넘칠 경우 스크롤 */
 }
+
 #content-wrapper img{
     position: absolute;
     width: 100%;
@@ -65,12 +68,12 @@ body {
 /* 5. 내부 html 컨테이너 */
 #content-container {
     background: rgba(255, 255, 255, 0.39);
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 90%;
-    height: 100%;
-    max-height: 90%;
+    height: auto;             /* 💡 고정 100% 제거 */
+    max-height: none;         /* 💡 최대 높이 제한 제거 */
+    overflow: visible;
 }

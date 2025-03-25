@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Rabbit's Studio</title>
-    <script src="/js/home-script.js"></script>
-    <link href = "/css/home-styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="/css/home-styles.css" />
 </head>
 <body>
-    <div id="container">
-        <div class="box box1">상단</div>
-        <div class="box box2">좌측</div>
-        <div class="box box3">우측상단</div>
-        <div class="box box4">우측측하단</div>
-    </div>
+  <div id="container">
+    <header class="about-title">About Me</header>
+
+    <!-- 좌측 -->
+    <section class="left">
+      <div class="profile-image">프로필 이미지(내 사진)</div>
+      <div class="basic-info">나의 소개<br>(이름, 나이, 직무 같은 기본적인 것)</div>
+    </section>
+
+    <!-- 우측 상단: 이력 -->
+    <section class="right-top">
+      <div class="career-post">이력 게시글</div>
+      <div class="career-buttons">
+        <button>경력</button>
+        <button>기술</button>
+      </div>
+      <div class="career-list">
+        이력 목록<br>(이력 게시글 최상단 몇 개, 클릭 시 이동)
+      </div>
+    </section>
+
+    <!-- 우측 하단: 작품 이력 -->
+    <section class="right-bottom">
+      <div class="portfolio-title">작품이력</div>
+      <div class="portfolio-slider">
+        <div class="work-slide">
+          <div class="work-image">그림</div>
+          <div class="work-title">제목</div>
+          <div class="work-tag">짧은 태그</div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
